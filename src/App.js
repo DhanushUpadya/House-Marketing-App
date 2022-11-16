@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Routes, Route}  from 'react-router-dom'
 import Explore from './pages/Explore';
 import Forgotpassword from './pages/Forgotpassword';
-import Navbar from './pages/Navbar';
+import Navbar from './components/Navbar';
 import Offers from './pages/Offers';
 import Profile from './pages/Profile';
 import Signin from './pages/Signin';
