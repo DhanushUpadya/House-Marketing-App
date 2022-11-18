@@ -8,7 +8,7 @@ import Offers from './pages/Offers';
 import Profile from './pages/Profile';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
-
+import PrivateRoute from './components/PrivateRoute';
 
 
 function App() {
@@ -22,7 +22,9 @@ function App() {
 
       <Route path='/offers' element={<Offers/>}/>
 
-      <Route path='/profile' element={<Profile/>}/>
+    <Route path ='/profile' element={<PrivateRoute/>}>
+    <Route path='/profile' element={<Profile/>}/>
+    </Route>
 
       <Route path='/signin' element={<Signin/>}/>
 
