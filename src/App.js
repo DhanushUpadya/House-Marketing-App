@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import PrivateRoute from './components/PrivateRoute';
+import Category from './pages/Category';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <Route path='/forgotpassword' element={<Forgotpassword/>}/>
 
       <Route path='/offers' element={<Offers/>}/>
-
+      <Route path='/category/:categoryName' element={<Category/>}/>
     <Route path ='/profile' element={<PrivateRoute/>}>
     <Route path='/profile' element={<Profile/>}/>
     </Route>
