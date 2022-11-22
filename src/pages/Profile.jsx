@@ -6,6 +6,10 @@ import { db } from '../firebase.config'
 import {updateDoc, doc} from 'firebase/firestore'
 import { async } from '@firebase/util'
 import {toast} from 'react-toastify'
+import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg'
+import homeIcon from '../assets/svg/homeIcon.svg'
+
+
 function Profile() {
   const auth = getAuth()
 
@@ -80,6 +84,12 @@ const [changeDetails,setChangeDetails] = useState(false)
           <input type="text" id="email" className={!changeDetails ? 'profileEmail' : 'profileEmailActive' } disabled={!changeDetails} value={email} onChange={onChange}/>
         </form>
       </div>
+
+      <Link to='/create-listing' className='createListing'>
+        <img src={homeIcon} alt="Home" />
+        <p>Sell or Rent your home</p>
+        <img src={arrowRight} alt="arrowRight" />
+      </Link>
     </main>
   </div>
 }

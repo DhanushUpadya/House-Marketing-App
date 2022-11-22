@@ -61,7 +61,7 @@ function Category() {
             {listings.map((listing) =>(
                     <ListingItem listing={listing.data} 
                                 id={listing.id} key={listing.id}
-                                onDelete = {onDelete}/>
+                               />
             ))}
             
         </ul>    
