@@ -235,7 +235,7 @@ function Listing() {
           <li>{listing.furnished && 'Furnished'}</li>
         </ul>
 
-        <p className='listingLocationTitle'>Location</p>
+     
 
         {/* <div className='leafletContainer'>
           <MapContainer
