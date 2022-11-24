@@ -87,14 +87,16 @@ function SignIn() {
             <button className='signInButton'>
               <ArrowRightIcon fill='#ffffff' width='34px' height='34px' />
             </button>
+ 
           </div>
         </form>
+  
 
         <OAuth />
-
         <Link to='/signup' className='registerLink'>
           Sign Up Instead
         </Link>
+       
       </div>
     </>
   )

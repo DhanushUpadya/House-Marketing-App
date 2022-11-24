@@ -85,13 +85,17 @@ button {
   right: 20px;
 }
 
-.pageContainer,
+.pageContainer{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 .offers,
 .profile,
 .listingDetails,
 .category,
 .explore {
   margin: 1rem;
+
 }
 @media (min-width: 1024px) {
   .pageContainer,
@@ -101,7 +105,11 @@ button {
   .category,
   .explore {
     margin: 3rem;
+   
   }
+    
+   
+ 
 }
 
 .loadingSpinnerContainer {
@@ -244,6 +252,7 @@ button {
 .signUpText {
   font-size: 1.5rem;
   font-weight: 700;
+  
 }
 
 .signInButton,
@@ -289,11 +298,11 @@ button {
 }
 
 .registerLink {
-  margin-top: 4rem;
+  margin-top: 2rem;
   color: #00cc66;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
 @media (min-width: 1217px) {
@@ -587,6 +596,7 @@ button {
   margin-top: 2rem;
   display: flex;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .landlordName {
